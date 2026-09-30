@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Eth.ink Studio | Tattoos, Piercings, Bigarade Brand & Art Gallery in Beau Vallon</title>
+    <meta name="description" content="Eth.ink Studio at First Floor Boat House Building, Beau Vallon, Seychelles. Custom tattoos, body piercings, original art gallery displays, environmental murals, and local souvenirs. Official home of Bigarade apparel & jewellery.">
+    <meta name="keywords" content="Ethink Studio, Seychelles tattoo studio, Beau Vallon piercing, Bigarade apparel, Seychelles art gallery, mural artist Seychelles, custom illustrations, Boat House Building">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Eth.ink Studio | Tattoos, Piercings & Bigarade Brand">
+    <meta property="og:description" content="Tattoo & Piercing Studio, Art Gallery, Beach Store & Home to Bigarade Apparel in Beau Vallon, Seychelles.">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TattooParlor",
+      "name": "Eth.ink Studio",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "First Floor Boat House Building",
+        "addressLocality": "Beau Vallon",
+        "addressRegion": "Mahé",
+        "addressCountry": "SC"
+      },
+      "telephone": "+2482559668",
+      "email": "eth.inktattoo@gmail.com",
+      "openingHours": "Mo-Sa 10:00-17:00",
+      "description": "Tattoo and piercing studio, fine art gallery, custom murals, digital illustrations, beach store, and official home of Bigarade apparel and jewellery.",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --bg: #ffffff;
+            --surface: #f8f9fa;
+            --text: #1a1a1a;
+            --text-muted: #4a4a4a;
+            --border: #e0e0e0;
+            --turquoise: rgb(154, 225, 218);
+            --turquoise-dark: rgb(60, 150, 138);
+            --orange: rgb(254, 208, 130);
+            --orange-dark: rgb(230, 150, 50);
+            
+            /* Enhanced see-through frosted glass styling */
+            --glass-bg: rgba(255, 255, 255, 0.30);
+            --glass-bg-hover: rgba(255, 255, 255, 0.45);
+            --glass-border: rgba(255, 255, 255, 0.55);
+            --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.06);
+            --glass-blur: blur(8px);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--surface);
+            border-bottom: 2px solid var(--turquoise);
+            text-align: center;
+            padding: 30px 20px 25px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .brand-logo {
+            max-width: 280px;
+            height: auto;
+            display: block;
+            margin: 0 auto 15px auto;
+        }
+
+        .tagline {
+            color: var(--turquoise-dark);
+            font-size: 1.4rem;
+            margin-top: 10px;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        /* Full Width Main Background Container */
+        main.site-body-bg {
+            width: 100%;
+            max-width: 100%;
+            margin: 0;
+            padding: 30px 15px;
+            box-sizing: border-box;
+            background-color: #faeef1;
+            background-image: url('background.png');
+            background-repeat: repeat;
+            background-position: top center;
+            background-size: 500px 500px;
+        }
+
+        /* 3-Column Layout Shell */
+        .layout-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 260px minmax(0, 1fr) 280px;
+            gap: 25px;
+            align-items: start;
+        }
+
+        /* Sticky Sidebar Styles */
+        .sidebar {
+            position: sticky;
+            top: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            z-index: 5;
+        }
+
+        .sidebar-card {
+            background: var(--glass-bg);
+            -webkit-backdrop-filter: var(--glass-blur);
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: 14px;
+            padding: 20px;
+            box-shadow: var(--glass-shadow);
+        }
+
+        .sidebar-title {
+            font-size: 1.1rem;
+            color: var(--turquoise-dark);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--turquoise);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Left Sidebar: Quick Nav Links */
+        .nav-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .nav-list a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px;
+            border-radius: 8px;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            background: rgba(255, 255, 255, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            transition: all 0.25s ease;
+        }
+
+        .nav-list a:hover {
+            background: var(--turquoise);
+            color: #ffffff;
+            transform: translateX(4px);
+            border-color: var(--turquoise);
+        }
+
+        .nav-list a i {
+            width: 18px;
+            text-align: center;
+            color: var(--turquoise-dark);
+        }
+
+        .nav-list a:hover i {
+            color: #ffffff;
+        }
+
+        /* Central Column Content Styling */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        section {
+            width: 100%;
+        }
+
+        /* Dedicated Section Header Boxes */
+        .header-box {
+            background: var(--glass-bg);
+            -webkit-backdrop-filter: var(--glass-blur);
+            backdrop-filter: var(--glass-blur);
+            border: 2px solid var(--turquoise);
+            border-left: 6px solid var(--turquoise-dark);
+            border-radius: 12px;
+            padding: 14px 22px;
+            margin-bottom: 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: var(--glass-shadow);
+        }
+
+        .header-box h2 {
+            font-size: 1.5rem;
+            color: var(--turquoise-dark);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .header-box i {
+            font-size: 1.4rem;
+            color: var(--turquoise-dark);
+        }
+
+        .justify-text {
+            text-align: justify;
+        }
+
+        /* Frosted Glass Cards */
+        .glass-card {
+            background-color: var(--glass-bg);
+            -webkit-backdrop-filter: var(--glass-blur);
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: var(--glass-shadow);
+        }
+
+        /* Bigarade Feature Banner */
+        .bigarade-feature {
+            background: var(--glass-bg);
+            -webkit-backdrop-filter: var(--glass-blur);
+            backdrop-filter: var(--glass-blur);
+            border: 2px solid var(--turquoise);
+            border-left: 6px solid var(--orange);
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: var(--glass-shadow);
+        }
+
+        .bigarade-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+
+        .bigarade-logo {
+            max-width: 200px;
+            height: auto;
+            display: block;
+        }
+
+        .bigarade-feature h2 { 
+            color: var(--turquoise-dark); 
+            font-size: 1.8rem; 
+        }
+
+        .bigarade-feature .accent-tag {
+            color: var(--orange-dark);
+            font-weight: bold;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            background-color: var(--glass-bg);
+            -webkit-backdrop-filter: var(--glass-blur);
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-top: 4px solid var(--turquoise);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: var(--glass-shadow);
+        }
+
+        .card h3 { color: var(--text); margin-bottom: 8px; font-size: 1.15rem; }
+        .card p { color: var(--text-muted); font-size: 0.92rem; }
+
+        /* Gallery Filters */
+        .gallery-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .filter-btn {
+            background: var(--glass-bg);
+            -webkit-backdrop-filter: var(--glass-blur);
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            color: var(--text);
+            padding: 8px 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--turquoise);
+            color: #ffffff;
+            border-color: var(--turquoise);
+        }
+
+        /* Gallery Grid with Lightbox Support */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery-item {
+            background-color: var(--glass-bg);
+            -webkit-backdrop-filter: var(--glass-blur);
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--glass-shadow);
+            cursor: pointer;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            position: relative;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+
+        .gallery-item-img-wrap {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.06);
+        }
+
+        .gallery-item-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.35);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.25s ease;
+            color: #ffffff;
+            font-size: 1.5rem;
+        }
+
+        .gallery-item:hover .gallery-item-overlay {
+            opacity: 1;
+        }
+
+        .gallery-item span {
+            display: block;
+            padding: 8px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-align: center;
+            font-weight: 600;
+        }
+
+        /* Contact Details */
+        .contact-box {
+            background-color: var(--glass-bg);
+            -webkit-backdrop-filter: var(--glass-blur);
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-left: 5px solid var(--orange);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: var(--glass-shadow);
+        }
+
+        .contact-box p {
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        .contact-box a.phone-link {
+            color: var(--turquoise-dark);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-box a.phone-link:hover {
+            color: var(--orange-dark);
+            text-decoration: underline;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--turquoise);
+            color: #ffffff;
+            font-weight: bold;
+            padding: 10px 22px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.88rem;
+            transition: background 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--turquoise-dark);
+        }
+
+        .btn-whatsapp {
+            background-color: #25d366;
+            color: #ffffff;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1da851;
+        } 
+
+        .social-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .btn-social-card {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background-color: rgba(255, 255, 255, 0.55);
+            color: var(--text);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            padding: 10px 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.88rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn-social-card:hover {
+            background-color: #ffffff;
+            border-color: var(--turquoise);
+            color: var(--turquoise-dark);
+            transform: translateY(-2px);
+        }
+
+        .social-icon {
+            font-size: 1.2rem;
+            transition: transform 0.2s ease;
+        } 
+
+        .btn-social-card:hover .social-icon {
+            transform: scale(1.15);
+        }
+
+        /* Image Lightbox Viewer Modal */
+        .lightbox-modal {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.88);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            padding: 20px;
+        }
+
+        .lightbox-modal.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .lightbox-content {
+            max-width: 90vw;
+            max-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            transform: scale(0.92);
+            transition: transform 0.3s ease;
+        }
+
+        .lightbox-modal.active .lightbox-content {
+            transform: scale(1);
+        }
+
+        .lightbox-img {
+            max-width: 100%;
+            max-height: 78vh;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .lightbox-caption {
+            color: #ffffff;
+            margin-top: 15px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+
+        /* Image Lightbox Viewer Modal */
+        .lightbox-modal {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.88);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            padding: 20px;
+        }
+
+        .lightbox-modal.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .lightbox-content {
+            max-width: 85vw;
+            max-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            transform: scale(0.92);
+            transition: transform 0.3s ease;
+        }
+
+        .lightbox-modal.active .lightbox-content {
+            transform: scale(1);
+        }
+
+        .lightbox-img {
+            max-width: 100%;
+            max-height: 75vh;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+         }
+
+         .lightbox-caption {
+             color: #ffffff;
+             margin-top: 15px;
+             font-size: 1.1rem;
+             font-weight: 500;
+             text-align: center;
+             letter-spacing: 0.5px;
+         }
+
+         /* Close Button */
+         .lightbox-close {
+             position: absolute;
+             top: 20px;
+             right: 25px;
+             background: rgba(255, 255, 255, 0.2);
+             border: none;
+             color: #ffffff;
+             font-size: 1.8rem;
+             width: 44px;
+             height: 44px;
+             border-radius: 50%;
+             cursor: pointer;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             transition: background 0.2s ease, transform 0.2s ease;
+             z-index: 10001;
+         }
+
+         .lightbox-close:hover {
+             background: rgba(255, 255, 255, 0.4);
+             transform: scale(1.08);
+         }
+
+         /* Navigation Arrow Buttons */
+         .lightbox-nav {
+             position: absolute;
+             top: 50%;
+             transform: translateY(-50%);
+             background: rgba(255, 255, 255, 0.2);
+             border: 1px solid rgba(255, 255, 255, 0.3);
+             color: #ffffff;
+             font-size: 1.5rem;
+             width: 50px;
+             height: 50px;
+             border-radius: 50%;
+             cursor: pointer;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             transition: background 0.2s ease, transform 0.2s ease;
+             z-index: 10001;
+          }
+
+          .lightbox-nav:hover {
+              background: rgba(255, 255, 255, 0.45);
+              transform: translateY(-50%) scale(1.1);
+          }
+
+          .lightbox-prev {
+              left: 25px;
+          }
+ 
+          .lightbox-next {
+              right: 25px;
+          }
+
+          @media (max-width: 768px) {
+              .lightbox-nav {
+                  width: 40px;
+                  height: 40px;
+                  font-size: 1.2rem;
+              }
+              .lightbox-prev { left: 10px; }
+              .lightbox-next { right: 10px; }
+          }
+
+        footer {
+            border-top: 1px solid var(--border);
+            background-color: var(--surface);
+            text-align: center;
+            padding: 30px 20px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 1100px) {
+            .layout-container {
+                grid-template-columns: 240px minmax(0, 1fr);
+            }
+            .sidebar-right {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .layout-container {
+                grid-template-columns: 1fr;
+            }
+            .sidebar-left {
+                position: relative;
+                top: 0;
+            }
+            .nav-list {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .nav-list li {
+                flex: 1 1 calc(50% - 10px);
+            }
+            .nav-list a {
+                justify-content: center;
+                font-size: 0.85rem;
+            }
+            header {
+                padding: 20px 15px;
+            }
+            .tagline {
+                font-size: 1.1rem;
+            }
+            .header-box h2 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Eth.ink Studio Logo" class="brand-logo">
+
+        <p class="tagline">Tattoos • Piercings • Fine Art • Beach Store • Souvenirs • Murals</p>
+        
+        <div id="google_translate_element" style="margin-top: 18px;"></div>
+        <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'fr,de,it,es,ru,en',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+          }, 'google_translate_element');
+        }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </header>
+
+    <main class="site-body-bg">
+        <div class="layout-container">
+
+            <!-- LEFT SIDEBAR: Navigation Jump List -->
+            <aside class="sidebar sidebar-left">
+                <div class="sidebar-card">
+                    <div class="sidebar-title">
+                        <i class="fa-solid fa-compass"></i> Navigation
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="#about"><i class="fa-solid fa-circle-info"></i> About Studio</a></li>
+                        <li><a href="#bigarade"><i class="fa-solid fa-shirt"></i> Bigarade Brand</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-palette"></i> What We Offer</a></li>
+                        <li><a href="#gallery"><i class="fa-solid fa-images"></i> Art Gallery</a></li>
+                        <li><a href="#contact"><i class="fa-solid fa-location-dot"></i> Location & Contact</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- CENTRAL COLUMN: Main Content -->
+            <div class="main-content">
+
+                <section id="about">
+                    <div class="header-box">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                        <h2>About Eth.ink Studio</h2>
+                    </div>
+                    <div class="glass-card">
+                        <p class="justify-text">Eth.ink Studio is a premier creative space located at Beau Vallon, Seychelles. We specialize in professional body art, precision body piercings, fine art gallery showcases, custom digital illustrations, and large-scale environmental mural installations. Visit our studio to explore our coastal store, curated local artisan souvenirs, and custom in-house apparel and jewellery lines.</p>
+                        <p class="justify-text" style="margin-top: 12px;">We strive to keep all of our supplies and practices environmentally friendly, you can fully trust that with us you are contributing to the wellness and conservation of the environment.</p>
+                    </div>
+                </section>
+
+                <section id="bigarade">
+                    <div class="bigarade-feature">
+                        <div class="bigarade-header">
+                            <img src="bigarade-logo.png" alt="Bigarade Logo" class="bigarade-logo">
+                            <h2> - <span class="accent-tag">In-House Apparel & Jewellery</span></h2>
+                        </div>
+                        <p class="justify-text">Eth.ink Studio is the official home and retail outlet for <strong>Bigarade</strong>, our custom apparel and handcrafted jewellery brand. Inspired by coastal island aesthetics and modern design, our original apparel and custom jewellery collections are available exclusively inside the studio.</p>
+                    </div>
+                </section>
+
+                <section id="services">
+                    <div class="header-box">
+                        <i class="fa-solid fa-list-check"></i>
+                        <h2>What We Offer</h2>
+                    </div>
+                    <div class="services-grid">
+                        <div class="card">
+                            <h3>Tattoos & Body Piercings</h3>
+                            <p>Custom tattoo artwork, body piercing services, strict studio hygiene standards, and implant-grade titanium body jewellery.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Bigarade Apparel & Jewellery</h3>
+                            <p>Exclusive in-house fashion line, printed apparel, custom jewellery designs, and curated beach lifestyle goods.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Art Gallery & Souvenirs</h3>
+                            <p>Fine art exhibitions, original visual canvas displays, handcrafted coastal items, and authentic local Seychellois souvenirs.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Illustrations & Murals</h3>
+                            <p>Professional digital illustration, graphic design services, comic layouts, and commercial or environmental mural work.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="gallery">
+                    <div class="header-box">
+                        <i class="fa-solid fa-photo-film"></i>
+                        <h2>Showcase Gallery</h2>
+                    </div>
+
+                    <div class="gallery-filters">
+                        <button class="filter-btn active" onclick="filterGallery('all', event)">All</button>
+                        <button class="filter-btn" onclick="filterGallery('tattoos', event)">Tattoos & Piercings</button>
+                        <button class="filter-btn" onclick="filterGallery('bigarade', event)">Bigarade Apparel & Jewellery</button>
+                        <button class="filter-btn" onclick="filterGallery('art', event)">Fine Art & Souvenirs</button>
+                        <button class="filter-btn" onclick="filterGallery('murals', event)">Murals & Graphics</button>
+                    </div>
+
+                    <div class="gallery-grid">
+                        <!-- Tattoos (14 items) -->
+                        <div class="gallery-item tattoos" onclick="openLightbox('tattoo-1.jpg', 'Tattoo 1')">
+                            <div class="gallery-item-img-wrap"><img src="tattoo-1.jpg" alt="Custom Tattoo"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span> Tattoo 1</span>
+                        </div>
+                        <div class="gallery-item tattoos" onclick="openLightbox('tattoo-2.jpg', 'Tattoo 2')">
+                            <div class="gallery-item-img-wrap"><img src="tattoo-2.jpg" alt="Custom Tattoo"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span> Tattoo 2</span>
+                        </div>
+                        <div class="gallery-item tattoos" onclick="openLightbox('tattoo-3.jpg', 'Tattoo 3')">
+                            <div class="gallery-item-img-wrap"><img src="tattoo-3.jpg" alt="Custom Tattoo"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span> Tattoo 3</span>
+                        </div>
+                        <div class="gallery-item tattoos" onclick="openLightbox('tattoo-4.jpg', 'Tattoo 4')">
+                            <div class="gallery-item-img-wrap"><img src="tattoo-4.jpg" alt="Custom Tattoo"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span> Tattoo 4</span>
+                        </div>
+                        <div class="gallery-item tattoos" onclick="openLightbox('tattoo-5.jpg', 'Tattoo 5')">
+                            <div class="gallery-item-img-wrap"><img src="tattoo-5.jpg" alt="Custom Tattoo"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span> Tattoo 5</span>
+                        </div>
+                        <div class="gallery-item tattoos" onclick="openLightbox('tattoo-6.jpg', 'Tattoo 6')">
+                            <div class="gallery-item-img-wrap"><img src="tattoo-6.jpg" alt="Custom Tattoo"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span> Tattoo 6</span>
+                        </div>
+                        <div class="gallery-item tattoos" onclick="openLightbox('tattoo-7.jpg', 'Tattoo 7')">
+                            <div class="gallery-item-img-wrap"><img src="tattoo-7.jpg" alt="Custom Tattoo"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span> Tattoo 7</span>
+                        </div>
+                        <div class="gallery-item tattoos" onclick="openLightbox('tattoo-8.jpg', 'Tattoo 8')">
+                            <div class="gallery-item-img-wrap"><img src="tattoo-8.jpg" alt="Custom Tattoo"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span> Tattoo 8</span>
+                        </div>
+                        <div class="gallery-item tattoos" onclick="openLightbox('tattoo-9.jpg', 'Tattoo 9')">
+                            <div class="gallery-item-img-wrap"><img src="tattoo-9.jpg" alt="Custom Tattoo"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span> Tattoo 9</span>
+                        </div>
+                        <div class="gallery-item tattoos" onclick="openLightbox('tattoo-10.jpg', 'Tattoo 10')">
+                            <div class="gallery-item-img-wrap"><img src="tattoo-10.jpg" alt="Custom Tattoo"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span> Tattoo 10</span>
+                        </div>
+                        <div class="gallery-item tattoos" onclick="openLightbox('tattoo-11.jpg', 'Tattoo 11')">
+                            <div class="gallery-item-img-wrap"><img src="tattoo-11.jpg" alt="Custom Tattoo"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span> Tattoo 11</span>
+                        </div>
+                        <div class="gallery-item tattoos" onclick="openLightbox('tattoo-12.jpg', 'Tattoo 12')">
+                            <div class="gallery-item-img-wrap"><img src="tattoo-12.jpg" alt="Custom Tattoo"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span> Tattoo 12</span>
+                        </div>
+                        <div class="gallery-item tattoos" onclick="openLightbox('tattoo-13.jpg', 'Tattoo 13')">
+                            <div class="gallery-item-img-wrap"><img src="tattoo-13.jpg" alt="Custom Tattoo"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span> Tattoo 13</span>
+                        </div>
+                        <div class="gallery-item tattoos" onclick="openLightbox('tattoo-14.jpg', 'Tattoo 14')">
+                            <div class="gallery-item-img-wrap"><img src="tattoo-14.jpg" alt="Custom Tattoo"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span> Tattoo 14</span>
+                        </div>
+
+                        <!-- Piercings (11 items) -->
+                        <div class="gallery-item tattoos" onclick="openLightbox('piercing-1.jpg', 'Piercing 1')">
+                            <div class="gallery-item-img-wrap"><img src="piercing-1.jpg" alt="Body Piercing"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Piercing 1</span>
+                        </div>
+                        <div class="gallery-item tattoos" onclick="openLightbox('piercing-2.jpg', 'Piercing 2')">
+                            <div class="gallery-item-img-wrap"><img src="piercing-2.jpg" alt="Body Piercing"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Piercing 2</span>
+                        </div>
+                        <div class="gallery-item tattoos" onclick="openLightbox('piercing-3.jpg', 'Piercing 3')">
+                            <div class="gallery-item-img-wrap"><img src="piercing-3.jpg" alt="Body Piercing"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Piercing 3</span>
+                        </div>
+                        <div class="gallery-item tattoos" onclick="openLightbox('piercing-4.jpg', 'Piercing 4')">
+                            <div class="gallery-item-img-wrap"><img src="piercing-4.jpg" alt="Body Piercing"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Piercing 4</span>
+                        </div>
+                        <div class="gallery-item tattoos" onclick="openLightbox('piercing-5.jpg', 'Piercing 5')">
+                            <div class="gallery-item-img-wrap"><img src="piercing-5.jpg" alt="Body Piercing"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Piercing 5</span>
+                        </div>
+                        <div class="gallery-item tattoos" onclick="openLightbox('piercing-6.jpg', 'Piercing 6')">
+                            <div class="gallery-item-img-wrap"><img src="piercing-6.jpg" alt="Body Piercing"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Piercing 6</span>
+                        </div>
+                        <div class="gallery-item tattoos" onclick="openLightbox('piercing-7.jpg', 'iercing 7')">
+                            <div class="gallery-item-img-wrap"><img src="piercing-7.jpg" alt="Body Piercing"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Piercing 7</span>
+                        </div>
+                        <div class="gallery-item tattoos" onclick="openLightbox('piercing-8.jpg', 'Piercing 8')">
+                            <div class="gallery-item-img-wrap"><img src="piercing-8.jpg" alt="Body Piercing"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Piercing 8</span>
+                        </div>
+                        <div class="gallery-item tattoos" onclick="openLightbox('piercing-9.jpg', 'Piercing 9')">
+                            <div class="gallery-item-img-wrap"><img src="piercing-9.jpg" alt="Body Piercing"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Piercing 9</span>
+                        </div>
+                        <div class="gallery-item tattoos" onclick="openLightbox('piercing-10.jpg', 'Piercing 10')">
+                            <div class="gallery-item-img-wrap"><img src="piercing-10.jpg" alt="Body Piercing"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Piercing 10</span>
+                        </div>
+                        <div class="gallery-item tattoos" onclick="openLightbox('piercing-11.jpg', 'Piercing 11')">
+                            <div class="gallery-item-img-wrap"><img src="piercing-11.jpg" alt="Body Piercing"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Piercing 11</span>
+                        </div>
+
+                        <!-- Bigarade Apparel & Jewellery (14 items) -->
+                        <div class="gallery-item bigarade" onclick="openLightbox('bigarade-1.jpg', 'Bigarade Apparel 1')">
+                            <div class="gallery-item-img-wrap"><img src="bigarade-1.jpg" alt="Bigarade Brand"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Bigarade Apparel 1</span>
+                        </div>
+                        <div class="gallery-item bigarade" onclick="openLightbox('bigarade-2.jpg', 'Bigarade Apparel 2')">
+                            <div class="gallery-item-img-wrap"><img src="bigarade-2.jpg" alt="Bigarade Brand"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Bigarade Apparel 2</span>
+                        </div>
+                        <div class="gallery-item bigarade" onclick="openLightbox('bigarade-3.jpg', 'Bigarade Apparel 3')">
+                            <div class="gallery-item-img-wrap"><img src="bigarade-3.jpg" alt="Bigarade Brand"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Bigarade Apparel 3</span>
+                        </div>
+                        <div class="gallery-item bigarade" onclick="openLightbox('bigarade-4.jpg', 'Bigarade Apparel 4')">
+                            <div class="gallery-item-img-wrap"><img src="bigarade-4.jpg" alt="Bigarade Brand"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Bigarade Apparel 4</span>
+                        </div>
+                        <div class="gallery-item bigarade" onclick="openLightbox('bigarade-5.jpg', 'Bigarade Apparel 5')">
+                            <div class="gallery-item-img-wrap"><img src="bigarade-5.jpg" alt="Bigarade Brand"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Bigarade Apparel 5</span>
+                        </div>
+                        <div class="gallery-item bigarade" onclick="openLightbox('bigarade-6.jpg', 'Bigarade Apparel 6')">
+                            <div class="gallery-item-img-wrap"><img src="bigarade-6.jpg" alt="Bigarade Brand"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Bigarade Apparel 6</span>
+                        </div>
+                        <div class="gallery-item bigarade" onclick="openLightbox('bigarade-7.jpg', 'Bigarade Apparel 7')">
+                            <div class="gallery-item-img-wrap"><img src="bigarade-7.jpg" alt="Bigarade Brand"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Bigarade Apparel 7</span>
+                        </div>
+                        <div class="gallery-item bigarade" onclick="openLightbox('bigarade-8.jpg', 'Bigarade Apparel 8')">
+                            <div class="gallery-item-img-wrap"><img src="bigarade-8.jpg" alt="Bigarade Brand"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Bigarade Apparel 8</span>
+                        </div>
+                        <div class="gallery-item bigarade" onclick="openLightbox('bigarade-9.jpg', 'Bigarade Apparel 9')">
+                            <div class="gallery-item-img-wrap"><img src="bigarade-9.jpg" alt="Bigarade Brand"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Bigarade Apparel 9</span>
+                        </div>
+                        <div class="gallery-item bigarade" onclick="openLightbox('bigarade-10.jpg', 'Bigarade Apparel 10')">
+                            <div class="gallery-item-img-wrap"><img src="bigarade-10.jpg" alt="Bigarade Brand"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Bigarade Apparel 10</span>
+                        </div>
+                        <div class="gallery-item bigarade" onclick="openLightbox('bigarade-11.jpg', 'Bigarade jewellery 1')">
+                            <div class="gallery-item-img-wrap"><img src="bigarade-11.jpg" alt="Bigarade Brand"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Bigarade jewellery 1</span>
+                        </div>
+                        <div class="gallery-item bigarade" onclick="openLightbox('bigarade-12.jpg', 'Bigarade jewellery 2')">
+                            <div class="gallery-item-img-wrap"><img src="bigarade-12.jpg" alt="Bigarade Brand"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Bigarade jewellery 2</span>
+                        </div>
+                        <div class="gallery-item bigarade" onclick="openLightbox('bigarade-13.jpg', 'Bigarade jewellery 3')">
+                            <div class="gallery-item-img-wrap"><img src="bigarade-13.jpg" alt="Bigarade Brand"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Bigarade jewellery 3</span>
+                        </div>
+                        <div class="gallery-item bigarade" onclick="openLightbox('bigarade-14.jpg', 'Bigarade jewellery 4')">
+                            <div class="gallery-item-img-wrap"><img src="bigarade-14.jpg" alt="Bigarade Brand"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Bigarade jewellery 4</span>
+                        </div>
+
+                        <!-- Fine Art & Souvenirs (8 items) -->
+                        <div class="gallery-item art" onclick="openLightbox('art-1.jpg', 'Gallery Display 1')">
+                            <div class="gallery-item-img-wrap"><img src="art-1.jpg" alt="Art & Souvenirs"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Gallery Display 1</span>
+                        </div>
+                        <div class="gallery-item art" onclick="openLightbox('art-2.jpg', 'Gallery Display 2')">
+                            <div class="gallery-item-img-wrap"><img src="art-2.jpg" alt="Art & Souvenirs"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Gallery Display 2</span>
+                        </div>
+                        <div class="gallery-item art" onclick="openLightbox('art-3.jpg', 'Gallery Display 3')">
+                            <div class="gallery-item-img-wrap"><img src="art-3.jpg" alt="Art & Souvenirs"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Gallery Display 3</span>
+                        </div>
+                        <div class="gallery-item art" onclick="openLightbox('art-6.jpg', 'Artisan Souvenir 1')">
+                            <div class="gallery-item-img-wrap"><img src="art-6.jpg" alt="Art & Souvenirs"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Artisan Souvenir 1</span>
+                        </div>
+                        <div class="gallery-item art" onclick="openLightbox('art-7.jpg', 'Artisan Souvenir 2')">
+                            <div class="gallery-item-img-wrap"><img src="art-7.jpg" alt="Art & Souvenirs"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Artisan Souvenir 2</span>
+                        </div>
+                        <div class="gallery-item art" onclick="openLightbox('art-8.jpg', 'Artisan Souvenir 3')">
+                            <div class="gallery-item-img-wrap"><img src="art-8.jpg" alt="Art & Souvenirs"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Artisan Souvenir 3</span>
+                        </div>
+                        <div class="gallery-item art" onclick="openLightbox('art-9.jpg', 'Artisan Souvenir 4')">
+                            <div class="gallery-item-img-wrap"><img src="art-9.jpg" alt="Art & Souvenirs"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Artisan Souvenir 4</span>
+                        </div>
+                        <div class="gallery-item art" onclick="openLightbox('art-10.jpg', 'Beach Store Goods 2')">
+                            <div class="gallery-item-img-wrap"><img src="art-10.jpg" alt="Art & Souvenirs"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Beach Store Goods 2</span>
+                        </div>
+
+                        <!-- Murals & Graphics (3 items) -->
+                        <div class="gallery-item murals" onclick="openLightbox('mural-1.jpg', 'Mural 1')">
+                            <div class="gallery-item-img-wrap"><img src="mural-1.jpg" alt="Murals & Graphics"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Mural 1</span>
+                        </div>
+                        <div class="gallery-item murals" onclick="openLightbox('mural-2.jpg', 'Mural 2')">
+                            <div class="gallery-item-img-wrap"><img src="mural-2.jpg" alt="Murals & Graphics"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Mural 2</span>
+                        </div>
+                        <div class="gallery-item murals" onclick="openLightbox('mural-3.jpg', 'Mural 3')">
+                            <div class="gallery-item-img-wrap"><img src="mural-3.jpg" alt="Murals & Graphics"><div class="gallery-item-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div></div><span>Mural 3</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact">
+                    <div class="header-box">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <h2>Location & Contact</h2>
+                    </div>
+
+                    <div class="contact-box">
+                        <h3>Direct Contact</h3>
+                        <p style="margin-top: 10px;"><strong>Studio Location:</strong> First Floor Boat House Building, Beau Vallon, Mahé, Seychelles</p>
+                        <p><strong>Opening Hours:</strong> Monday – Saturday | 10:00 AM – 5:00 PM</p>
+                        <p><strong>Email Inquiries:</strong> <a href="mailto:eth.inktattoo@gmail.com" class="phone-link">eth.inktattoo@gmail.com</a></p>
+                        <p><strong>Phone / WhatsApp:</strong> 
+                            <a href="tel:+2482559668" class="phone-link">(+248) 2559668</a> &nbsp;|&nbsp; 
+                            <a href="tel:+2482545974" class="phone-link">(+248) 2545974</a>
+                        </p>
+                  
+                        <div style="margin-top: 15px;">
+                            <a href="mailto:eth.inktattoo@gmail.com" class="btn">Send Email Inquiry</a>
+                            <a href="https://wa.me/2482545974" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">Send WhatsApp</a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- RIGHT SIDEBAR: Sticky Social Profiles Box -->
+            <aside class="sidebar sidebar-right">
+                <div class="sidebar-card">
+                    <div class="sidebar-title">
+                        <i class="fa-solid fa-share-nodes"></i> Connect With Us
+                    </div>
+                    <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">Stay updated with our latest tattoo designs, fine art releases, and apparel collections.</p>
+                    <div class="social-list">
+                        <a href="https://www.facebook.com/eth.inktattoo" target="_blank" rel="noopener noreferrer" class="btn-social-card">
+                            <i class="fa-brands fa-facebook social-icon" style="color: #1877f2;"></i> Facebook
+                        </a>
+                        <a href="https://www.instagram.com/eth.ink/" target="_blank" rel="noopener noreferrer" class="btn-social-card">
+                            <i class="fa-brands fa-instagram social-icon" style="color: #e4405f;"></i> Tattoos & Piercings
+                        </a>
+                        <a href="https://www.instagram.com/eth.inkboutique/" target="_blank" rel="noopener noreferrer" class="btn-social-card">
+                            <i class="fa-brands fa-instagram social-icon" style="color: #e4405f;"></i> Eth.ink Boutique
+                        </a>
+                        <a href="https://www.instagram.com/eth.ink_art/" target="_blank" rel="noopener noreferrer" class="btn-social-card">
+                            <i class="fa-brands fa-instagram social-icon" style="color: #e4405f;"></i> Eth.ink Art
+                        </a>
+                        <a href="https://www.instagram.com/bigaradeseychelles/" target="_blank" rel="noopener noreferrer" class="btn-social-card">
+                            <i class="fa-brands fa-instagram social-icon" style="color: #e4405f;"></i> Bigarade Brand
+                        </a>
+                        <a href="https://wa.me/2482545974" target="_blank" rel="noopener noreferrer" class="btn-social-card">
+                            <i class="fa-brands fa-whatsapp social-icon" style="color: #25d366;"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- Lightbox Modal Viewer -->
+    <div id="lightbox" class="lightbox-modal" onclick="closeLightbox(event)">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    
+        <!-- Previous Arrow -->
+        <button class="lightbox-nav lightbox-prev" onclick="prevImage(event)" aria-label="Previous image">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <img id="lightbox-img" class="lightbox-img" src="" alt="Enlarged gallery view">
+            <div id="lightbox-caption" class="lightbox-caption"></div>
+        </div>
+
+        <!-- Next Arrow -->
+        <button class="lightbox-nav lightbox-next" onclick="nextImage(event)" aria-label="Next image">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <footer>
+        <p>&copy; Eth.ink Studio. First Floor Boat House Building, Beau Vallon, Seychelles. All Rights Reserved.</p>
+    </footer>
+
+<script>
+    // Gallery Filtering Logic
+    function filterGallery(category, evt) {
+        const items = document.querySelectorAll('.gallery-item');
+        const buttons = document.querySelectorAll('.filter-btn');
+        
+        buttons.forEach(btn => btn.classList.remove('active'));
+        evt.target.classList.add('active');
+
+        items.forEach(item => {
+            if (category === 'all' || item.classList.contains(category)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+
+    // Lightbox Popup & Navigation Logic
+    let currentVisibleItems = [];
+    let currentIndex = -1;
+
+    function getVisibleGalleryItems() {
+        return Array.from(document.querySelectorAll('.gallery-item'))
+                    .filter(item => item.style.display !== 'none');
+    }
+
+    function openLightbox(src, caption) {
+        const modal = document.getElementById('lightbox');
+        currentVisibleItems = getVisibleGalleryItems();
+
+        // Locate index of clicked item
+        currentIndex = currentVisibleItems.findIndex(item => {
+            const img = item.querySelector('img');
+            return img && img.getAttribute('src') === src;
+        });
+
+        updateLightboxContent(src, caption);
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function updateLightboxContent(src, caption) {
+        const modalImg = document.getElementById('lightbox-img');
+        const modalCaption = document.getElementById('lightbox-caption');
+        modalImg.src = src;
+        modalCaption.textContent = caption;
+    }
+
+    function nextImage(evt) {
+        if (evt) evt.stopPropagation();
+        if (currentVisibleItems.length === 0) return;
+        
+        currentIndex = (currentIndex + 1) % currentVisibleItems.length;
+        const item = currentVisibleItems[currentIndex];
+        const img = item.querySelector('img');
+        const caption = item.querySelector('span').textContent;
+        updateLightboxContent(img.getAttribute('src'), caption);
+    }
+
+    function prevImage(evt) {
+        if (evt) evt.stopPropagation();
+        if (currentVisibleItems.length === 0) return;
+
+        currentIndex = (currentIndex - 1 + currentVisibleItems.length) % currentVisibleItems.length;
+        const item = currentVisibleItems[currentIndex];
+        const img = item.querySelector('img');
+        const caption = item.querySelector('span').textContent;
+        updateLightboxContent(img.getAttribute('src'), caption);
+    }
+
+    function closeLightbox() {
+        const modal = document.getElementById('lightbox');
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+
+    // Keyboard Shortcuts (Arrow Keys & Escape)
+    document.addEventListener('keydown', function(evt) {
+        const modal = document.getElementById('lightbox');
+        if (!modal.classList.contains('active')) return;
+
+        if (evt.key === 'Escape') {
+            closeLightbox();
+        } else if (evt.key === 'ArrowRight') {
+            nextImage();
+        } else if (evt.key === 'ArrowLeft') {
+            prevImage();
+        }
+    });
+</script>
+ 
+</body>
+</html>
