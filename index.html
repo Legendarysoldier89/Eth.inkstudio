@@ -739,7 +739,7 @@
             z-index: 10;
         }
 
-        /* Responsive Breakpoints */
+           /* Responsive Breakpoints */
         @media (max-width: 1100px) {
             .layout-container {
                 grid-template-columns: 1fr;
@@ -779,30 +779,75 @@
                 font-size: 1.25rem;
             }
         }
+
+        /* Language Translator Styling */
+        .goog-te-banner-frame.skiptranslate,
+        .goog-logo-link, 
+        .goog-te-gadget span,
+        .goog-te-gadget-icon {
+            display: none !important;
+        }
+        body { top: 0px !important; }
+        
+        .goog-te-gadget { 
+            color: transparent !important; 
+            font-size: 0px !important; 
+        }
+
+        .language-wrapper {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid var(--turquoise);
+            padding: 6px 16px;
+            border-radius: 20px;
+            margin-top: 15px;
+        }
+
+        .language-label {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--turquoise-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .goog-te-gadget .goog-te-combo {
+            background-color: #ffffff !important;
+            border: 1px solid var(--turquoise) !important;
+            color: var(--text) !important;
+            padding: 4px 10px !important;
+            border-radius: 12px !important;
+            font-size: 0.85rem !important;
+            font-weight: 500 !important;
+            outline: none !important;
+            cursor: pointer !important;
+            display: inline-block !important;
+        }
     </style>
 </head>
 <body>
-
     <header>
-        <img src="logo.png" alt="Eth.ink Studio Logo" class="brand-logo">
+    <img src="logo.png" alt="Eth.ink Studio Logo" class="brand-logo">
+    <p class="tagline">Tattoos • Piercings • Fine Art • Beach Store • Souvenirs</p>
 
-        <p class="tagline">Tattoos • Piercings • Fine Art • Beach Store • Souvenirs • Murals</p>
-        
-        <div class="language-wrapper">
-            <span class="language-label"><i class="fa-globe"></i> Language Translator:</span>
-            <div id="google_translate_element"></div>
-        </div>
-        <script type="text/javascript">
-        function googleTranslateElementInit() {
-          new google.translate.TranslateElement({
-            pageLanguage: 'en',
-            includedLanguages: 'fr,de,it,es,ru,en',
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-          }, 'google_translate_element');
-        }
-        </script>
-        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    </header>
+    <div class="language-wrapper">
+        <span class="language-label"><i class="fa-solid fa-globe"></i> Language Translator:</span>
+        <div id="google_translate_element"></div>
+    </div>
+
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'fr,de,it,es,ru,en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</header>
 
     <main class="site-body-bg">
         <div class="layout-container">
